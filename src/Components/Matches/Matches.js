@@ -1,31 +1,20 @@
-import React, { useEffect } from "react";
+import React, { useContext } from "react";
+import { MatchesContext, MatchesDispatchContext } from "./Match";
 
 const Matches = () => {
-  const API_KEY = "b19d4dbb617647f5a3fac0df525b5c83"; // b071a1c501e042f48493faed1de147c5
-
-  const URL = "http://api.football-data.org/v2/competitions/2021/matches";
-
-  const fetchData = () => {
-    fetch(URL, { headers: { "X-Auth-Token": API_KEY } })
-      .then((res) => res.json())
-      .then((data) => console.log(data))
-      .catch((err) => console.error(err));
-  };
-
-  useEffect(() => {
-    fetchData();
-  }, []);
+  const matchDetails = useContext(MatchesContext);
+  const setMatchDetails = useContext(MatchesDispatchContext);
 
   return (
     <div>
       <h1>Latest matches</h1>
       <ul>
-        <li>Premier league</li>
-        <li>Bundesliga</li>
-        <li>UCL</li>
-        <li>La Liga</li>
-        <li>Ligue 1</li>
-        <li>Seria A</li>
+        <li>Premier League</li> {/* 2084 */}
+        <li>Bundesliga</li> {/* 2004 */}
+        <li>UCL</li> {/* 2001 UEL: 2146 */}
+        <li>La Liga</li> {/* 2014 */}
+        <li>Ligue 1</li> {/* 2015 */}
+        <li>Seria A</li> {/* 2019 */}
       </ul>
     </div>
   );
