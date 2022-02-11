@@ -1,6 +1,3 @@
-// PL teams
-http://api.football-data.org/v2/competitions/2021/teams
+// All scheduled matches 
 
-// PL Matches
-http://api.football-data.org/v2/competitions/2021/matches
-
+http://api.football-data.org/v2/matches?status=SCHEDULED`
