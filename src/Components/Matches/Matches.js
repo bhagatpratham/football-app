@@ -6,7 +6,7 @@ const Matches = () => {
 
   const fetchData = () => {
     fetch(`http://api.football-data.org/v2/matches?status=SCHEDULED`, {
-      headers: { "X-Auth-Token": "b19d4dbb617647f5a3fac0df525b5c83" },
+      headers: { "X-Auth-Token": process.env.REACT_APP_FOOTBALL_KEY },
     })
       .then((res) => res.json())
       .then((data) => {
