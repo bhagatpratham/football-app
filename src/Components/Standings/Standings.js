@@ -22,7 +22,51 @@ const Standings = () => {
 
   return (
     <>
-      <div>Standings Pl</div>
+      <div>Standings</div>
+      <div className="leagues">
+        <ul>
+          <li
+            onClick={() => {
+              setId("2021");
+              fetchData();
+            }}
+          >
+            Premier league
+          </li>
+          <li
+            onClick={() => {
+              setId("2002");
+              fetchData();
+            }}
+          >
+            Bundesliga
+          </li>
+          <li
+            onClick={() => {
+              setId("2019");
+              fetchData();
+            }}
+          >
+            Seria A
+          </li>
+          <li
+            onClick={() => {
+              setId("2014");
+              fetchData();
+            }}
+          >
+            La Liga
+          </li>
+          <li
+            onClick={() => {
+              setId("2015");
+              fetchData();
+            }}
+          >
+            Ligue 1
+          </li>
+        </ul>
+      </div>
       <thead>
         <tr>
           <th>Position</th>
