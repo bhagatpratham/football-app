@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./Styles/Standings.css";
 
 const Standings = () => {
   const [table, setTable] = useState([]);
@@ -24,8 +25,9 @@ const Standings = () => {
     <>
       <div>Standings</div>
       <div className="leagues">
-        <ul>
+        <ul className="">
           <li
+            className="nav_child"
             onClick={() => {
               setId("2021");
               fetchData();
@@ -34,6 +36,7 @@ const Standings = () => {
             Premier league
           </li>
           <li
+            className="nav_child"
             onClick={() => {
               setId("2002");
               fetchData();
@@ -42,6 +45,7 @@ const Standings = () => {
             Bundesliga
           </li>
           <li
+            className="nav_child"
             onClick={() => {
               setId("2019");
               fetchData();
@@ -50,6 +54,7 @@ const Standings = () => {
             Seria A
           </li>
           <li
+            className="nav_child"
             onClick={() => {
               setId("2014");
               fetchData();
@@ -58,6 +63,7 @@ const Standings = () => {
             La Liga
           </li>
           <li
+            className="nav_child"
             onClick={() => {
               setId("2015");
               fetchData();

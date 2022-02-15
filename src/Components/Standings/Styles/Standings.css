@@ -1,0 +1,29 @@
+.leagues {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  background-color: #1b31bb;
+  border-radius: 30px;
+  margin-left: 30%;
+}
+
+.nav_child {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  background: #1b31bb;
+  color: white;
+  display: inline-block;
+  padding: 5px 15px;
+  /* border-radius: 39px;
+  border: 1.5px solid #1b31bb; */
+  /* margin: 0px 10px; */
+}
+
+.nav_child:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #1b31bb;
+  border-radius: 30px;
+  height: 100%;
+}
